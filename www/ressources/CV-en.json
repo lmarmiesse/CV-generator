@@ -1,0 +1,200 @@
+{
+  "CV": {
+    "firstname": "Lucas",
+    "familyname": "Marmiesse",
+    "title": "Computer scientist",
+    "email": "lucas.marmiesse@gmail.com",
+    "homepage": "",
+    "Skills": {
+      "name": "Skills",
+      "values": [
+        {
+          "name": "Computer skills",
+          "subCateg": [
+            {
+              "name": "Porgramming languages",
+              "values": [
+                "Java",
+                "Python",
+                "JavaScript",
+                "R"
+              ]
+            },
+            {
+              "name": "Web",
+              "values": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "jQuery"
+              ]
+            },
+            {
+              "name": "Other",
+              "values": [
+                "PostgreSQL",
+                "LaTeX",
+                "Unix operating systems",
+                "Inkscape"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bioinformatics",
+          "subCateg": [
+            {
+              "name": "Systems biology",
+              "values": [
+                "Metabolic network modelling",
+                "Flux Balance Analysis",
+                "Gene network modelling",
+                "Logic models"
+              ]
+            },
+            {
+              "name": "Data analysis",
+              "values": [
+                "Transcriptomic data analysis",
+                "Data integration"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Experiences": {
+      "name": "Experiences",
+      "supervisorWord": "Supervisor",
+      "values": [
+        {
+          "name": "PhD",
+          "location": "Toulouse, France",
+          "company": "Laboratoire des Interactions Plantes-Microorganismes (LIPM)",
+          "date": "Since October 2013",
+          "description": "During my PhD, I initiated the mathematical modelling of a biological system studied by the group for years. It concerns the molecular networks involved in plant defense to pathogenic microorganisms. My work involved statistical analysis of large-scale heterogeneous datasets and data mining. I also developed a database and web interfaces to help data exploration and analysis (PostgreSQL, JavaScript, PHP, J2EE). I continued the development of a Java application called FlexFlux (See below). Also, a significant part of my time was dedicated to communication about my work (Presentations, Posters, conferences, scientific article writing).",
+          "supervisor": [
+            {
+              "name": "Susana Rivas",
+              "email": "susana.rivas@toulouse.inra.fr"
+            },
+            {
+              "name": "Philippe Besse",
+              "email": "philippe.besse@insa-toulouse.fr"
+            }
+          ]
+        },
+        {
+          "name": "Visiting student",
+          "location": "Cambridge, UK",
+          "company": "Babraham Institute",
+          "date": "October 2015 - December 2015",
+          "description": "Three month stay in the group of Nicolas Le Novère. The goal was to develop an algorithm able to use large scale datasets to create bounds for Flux Balance Analysis. This can allow to identify specific metabolic profiles in different experimental conditions.",
+          "supervisor": [
+            {
+              "name": "Nicolas Le Novère",
+              "email": "n.lenovere@gmail.com"
+            }
+          ]
+        },
+        {
+          "name": "Master’s intership",
+          "location": "Toulouse, France",
+          "company": "Laboratoire des Interactions Plantes-Microorganismes (LIPM)",
+          "date": "Marth 2013 - August 2013",
+          "description": "During this internship, I started the development of a Java application called FlexFlux (<a href=\"http://lipm-bioinfo.toulouse.inra.fr/flexflux/\">website</a>). It is dedicated to analyse metabolic network using FBA by integrating logical regulatory rules. FlexFlux features multi-thread calculations and otimisations making it one of the fastest FBA software available.",
+          "supervisor": [
+            {
+              "name": "Ludovic Cottret",
+              "email": "ludovic.cottret@toulouse.inra.fr"
+            }
+          ]
+        },
+        {
+          "name": "Programming project",
+          "location": "Bordeaux, France",
+          "company": "Institut National de la Recherche Agronomique (INRA)",
+          "date": "February 2012 - May 2012",
+          "description": "The goal of this project was to develop a web interface to use two applications dedicated to metabolic study and optimisation: PySCes and 13CFLUX2. We developed this interface using Lisp and CL-WHO.",
+          "supervisor": [
+            {
+              "name": "Sophie Colombié",
+              "email": "scolombi@bordeaux.inra.fr"
+            }
+          ]
+        }
+      ]
+    },
+    "Education": {
+      "name": "Education",
+      "values": [
+        {
+          "name": "PhD",
+          "location": "Toulouse, France",
+          "university": "Laboratoire des Interactions Plantes-Microorganismes (LIPM)",
+          "date": "Since october 2013",
+          "description": "see Experiences"
+        },
+        {
+          "name": "Master degree in Bio-informatics",
+          "location": "Bordeaux, France",
+          "university": "University of Bordeaux",
+          "date": "2011-2012",
+          "description": "Unix systems, Algorithmics, Software engineering, Oriented Object Programming (Java and C++), Design Patterns, Database design and management"
+        },
+        {
+          "name": "Bachelor of Science in biology",
+          "location": "Bordeaux, France",
+          "university": "University of Bordeaux",
+          "date": "2009-2011",
+          "description": "Molecular and cellular biology and Physiology"
+        }
+      ]
+    },
+    "Publications": {
+      "name": "Publications",
+      "values": [
+        {
+          "name": "FlexFlux: combining metabolic flux and regulatory network analyses",
+          "authors": [
+            "Lucas Marmiesse",
+            "Remi Peyraud",
+            "Ludovic Cottret"
+          ],
+          "year": 2015,
+          "journal": "BMC Systems Biology"
+        }
+      ]
+    },
+    "Languages": {
+      "name": "Languages",
+      "values": [
+        {
+          "name": "French",
+          "level": "Native"
+        },
+        {
+          "name": "English",
+          "level": "Fluent"
+        }
+      ]
+    },
+    "Interests": {
+      "name": "Interests",
+      "values": [
+        {
+          "name": "Science",
+          "description": ""
+        },
+        {
+          "name": "Web and mobile technologies",
+          "description": ""
+        },
+        {
+          "name": "Other",
+          "description": "I play the guitar (5 years of lessons), I like travels, movies ..."
+        }
+      ]
+    }
+  }
+}

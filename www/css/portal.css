@@ -1,0 +1,154 @@
+body {
+  font-size: 20px;
+  background-color:  #f5f5f5;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1000px;
+    }
+}
+
+img {
+    vertical-align:  baseline ; 
+}
+
+a:hover
+{
+  text-decoration:none;
+}
+.links {
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+}
+.links li {
+    display: inline;
+    padding: 0 15px;
+}
+
+/*.navbar-default {
+    background-color: green;
+    border-color: #e7e7e7;
+}*/
+
+.fa{
+    
+    margin-right: 0.5em;
+}
+
+.container {
+padding-left:3.5em;
+padding-right:3.5em;
+}
+
+.footer {
+    font-size: 16px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+
+#cv, #home{
+    background-color: white;
+    padding-bottom:30px;
+}
+
+
+
+.cvName{
+    padding-top:30px;
+    font-size: 50px;
+    color:green;
+}
+
+.cvTitle{
+    padding-top:10px;
+    font-size: 40px;
+}
+
+.cvMail{
+    font-size: 20px;
+    color:green;
+}
+
+.cvTitles{
+    padding-top:10px;
+    font-size: 35px;
+    color:green;
+}
+
+.skillsCategs{
+    font-size: 25px;
+    font-weight: bold;
+    padding-top:10px;
+    padding-bottom:10px;
+    color:green;
+}
+
+.skillsSubCategs{
+   padding-bottom:20px;
+   font-size: 20px;
+    font-weight: bold;
+   
+}
+
+.skillsValue{
+    font-size: 18px;
+    padding-bottom:30px;
+}
+
+.expsCategName{
+    font-size: 25px;
+    font-weight: bold;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.expsCategCompany{
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.expsCategInfo{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.expsCategInfoDate{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.expsCategInfoLoc{
+   font-size: 18px;
+}
+
+.expsDescr{
+    font-size: 18px;
+}
+
+.expsSupervisor{
+    font-size: 16px;
+}
+
+.publiName{
+    font-weight: bold;
+}
+.publiJournal{
+}
+
+
+hr {
+    border: none;
+    height: 3px;
+    /* Set the hr color */
+    color: green; /* old IE */
+    background-color: green; /* Modern Browsers */
+}

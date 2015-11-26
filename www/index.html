@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>Lucas Marmiesse</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+      
+    <link href="css/portal.css" rel="stylesheet">
+      
+    <link rel="stylesheet" href="ressources/font-awesome-4.5.0/css/font-awesome.min.css">
+    <script src="js/angular.min.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div ng-app="myApp" ng-controller="myCtrl" ng-init="init()">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container" ng-cloak>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--<a class="navbar-brand" href="#">Project name</a>  -->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li ng-class="{active: page==portal.About.url}"><a href="" ng-click="changePage(portal.About.url)">{{portal.About.name}}</a></li>
+            <li ng-class="{active: page==portal.CV.url}"><a href="" ng-click="changePage(portal.CV.url)">{{portal.CV.name}}</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a class="flag" ng-click="changeLanguage('en')"  style="cursor: pointer;"><img src="images/uk_flag.png" alt="France flag" style="width:30px;height:30px;"></a></li>
+              <li><a class="flag" ng-click="changeLanguage('fr')"  style="cursor: pointer;"><img src="images/france_flag.png" alt="France flag" style="width:30px;height:30px;"></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+      
+        
+        
+        
+        <div id="home" class="container" ng-show="page==portal.About.url" ng-cloak>
+          
+              <p>{{portal.text1}}</p>
+
+        </div> <!-- /container home-->
+    
+
+        <div id="cv" class="container" ng-show="page==portal.CV.url" ng-cloak>
+        <div id="cv" class="container" ng-show="page==portal.CV.url" ng-cloak>
+            
+            
+          <div class="cvName text-center">{{cv.firstname}} {{cv.familyname}}</div>    
+            <div class="cvMail text-center"> <a ng-href="mailto:{{cv.email}}">
+                <i class="fa fa-envelope"></i>{{"  " + cv.email}}</a></div>
+          <div class="cvMail text-center">
+              
+              <ul class="links">
+                  <li><a href="https://github.com/lmarmiesse"><i class="fa fa-github"></i> GitHub</a></li>
+                  <li><a href="https://fr.linkedin.com/in/lucasmarmiesse"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+              </ul>
+              
+         </div> 
+            
+        <div class="cvTitle text-center">{{cv.title}}</div>
+            
+            
+            
+          <div class="cvTitles"><i class="fa fa-wrench"></i> {{cv.Skills.name}}</div>
+              <hr/>
+              <div class="row" ng-repeat="skill in cv.Skills.values">
+                  <div class="skillsCategs col-md-12">{{skill.name}}</div>
+                    <div class="col-md-6 col-xs-12" ng-repeat="subCateg in skill.subCateg">
+                        
+                        <div class="skillsSubCategs col-md-4 col-xs-6 text-right">{{subCateg.name}}</div>
+                        <div class="skillsValue col-md-8 col-xs-6">
+                            <span ng-repeat="val in subCateg.values">
+                              {{val}}{{$last ? '' : ', '}}
+                            </span>
+                        </div>
+                  
+                  </div> 
+                </div>
+            
+            
+            <div class="cvTitles"><i class="fa fa-suitcase"></i> {{cv.Experiences.name}}</div>
+              <hr/>
+              <div ng-repeat="exps in cv.Experiences.values">
+                  <div class="row">
+                      
+                      <div class="expsCategName col-md-6 col-xs-6">
+                          {{exps.name}}
+                          <div class="expsCategCompany">{{exps.company}}</div>
+                      </div>
+                      <div class="expsCategInfo col-md-6 col-xs-6 text-right">
+                          <div class="expsCategInfoDate">{{exps.date}}</div>
+                          <div class="expsCategInfoLoc">{{exps.location}}</div>
+                      </div>
+                  
+                  </div>
+
+                  <p class="expsDescr text-justify" ng-bind-html="trustHTML(exps.description)"></p>   
+                  
+                  <p class="expsSupervisor">
+                      {{cv.Experiences.supervisorWord}}: 
+                      <span ng-repeat="supervisor in exps.supervisor">
+                          {{supervisor.name}}{{$last ? '' : ', '}}
+                      </span>
+                  </p>
+                  
+              </div> 
+            
+            
+            <div class="cvTitles"><i class="fa fa-graduation-cap"></i> {{cv.Education.name}}</div>
+            <hr/>
+                <div ng-repeat="edu in cv.Education.values">
+                    <div class="row">
+                      
+                      <div class="expsCategName col-md-6 col-xs-6">
+                          {{edu.name}}
+                          <div class="expsCategCompany">{{edu.university}}</div>
+                      </div>
+                      <div class="expsCategInfo col-md-6 col-xs-6 text-right">
+                          <div class="expsCategInfoDate">{{edu.date}}</div>
+                          <div class="expsCategInfoLoc">{{edu.location}}</div>
+                      </div>
+                  
+                  </div>
+                    
+                    <p class="expsDescr">{{edu.description}}</p> 
+                    
+                </div>
+            
+            <div class="cvTitles"><i class="fa fa-pencil"></i> {{cv.Publications.name}}</div>
+            <hr/>
+            <div ng-repeat="publi in cv.Publications.values">
+                <div class="publiName">{{publi.name}}</div>
+                <div class="publiAuthors">
+                    <span ng-repeat="author in publi.authors">
+                        {{author}}{{$last ? '' : ', '}}
+                    </span>
+                </div>
+                <div class="publiJournal"><i>{{publi.journal}}</i>, {{publi.year}}</div>
+            </div>
+            
+            
+            
+            <div class="cvTitles"><i class="fa fa-flag"></i> {{cv.Languages.name}}</div>
+            <hr/>
+            <div class="col-md-6 col-xs-12" ng-repeat="lang in cv.Languages.values">
+                <div class="skillsSubCategs col-md-4 col-xs-6 text-right">{{lang.name}}</div>
+                    <div class="skillsValue col-md-8 col-xs-6">{{lang.level}}</div>
+            </div>
+            
+            
+            
+            
+             <div class="cvTitles"><i class="fa fa-heart"></i> {{cv.Interests.name}}</div>
+            <hr/>
+            
+        </div> <!-- /container cv-->
+        
+        
+        <footer class="footer text-center">
+			<div class="container">
+				<p>
+					Lucas Marmiesse, 2015
+				</p>
+			</div>
+		</footer>
+
+        
+    </div> <!-- /angular app -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
