@@ -78,6 +78,11 @@ a:hover
     color:green;
 }
 
+.photo{
+    padding-top:60px;
+
+}
+
 .cvTitles{
     padding-top:10px;
     font-size: 30px;

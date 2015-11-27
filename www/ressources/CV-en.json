@@ -5,8 +5,8 @@
     "title": "Computer scientist",
     "email": "lucas.marmiesse@gmail.com",
     "homepage": "www.lucasmarmiesse.net",
-    "github": "https://github.com/lmarmiesse",
-    "linkedin": "https://fr.linkedin.com/in/lucasmarmiesse",
+    "github": "github.com/lmarmiesse",
+    "linkedin": "fr.linkedin.com/in/lucasmarmiesse",
     "Skills": {
       "name": "Skills",
       "values": [
@@ -135,7 +135,7 @@
           "location": "Toulouse, France",
           "university": "Laboratoire des Interactions Plantes-Microorganismes (LIPM)",
           "date": "Since october 2013",
-          "description": "see Experiences"
+          "description": ""
         },
         {
           "name": "Master degree in Bio-informatics",
@@ -181,16 +181,16 @@
         }
       ]
     },
-    "Interests": {
+     "Interests": {
       "name": "Interests",
       "values": [
         {
           "name": "Science",
-          "description": ""
+          "description": "I like to learn about"
         },
         {
-          "name": "Web and mobile technologies",
-          "description": ""
+          "name": "Programming",
+          "description": "I'am always excited about starting new projects or adding features. I am particularly interested in web and mobile technologies."
         },
         {
           "name": "Other",

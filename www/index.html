@@ -69,21 +69,29 @@
 
         <div id="cv" class="container" ng-show="page==portal.CV.url" ng-cloak>
             
+        <div class="row"> 
+            <div class="col-md-8">
+                  <div class="cvName text-center">{{cv.firstname}} {{cv.familyname}}</div>    
+                    <div class="cvMail text-center"> <a ng-href="mailto:{{cv.email}}">
+                        <i class="fa fa-envelope"></i>{{"  " + cv.email}}</a></div>
+                  <div class="cvMail text-center">
+
+                      <ul class="links">
+                          <li><a ng-href="https://{{cv.github}}"><i class="fa fa-github"></i> GitHub</a></li>
+                          <li><a ng-href="https://{{cv.linkedin}}"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                      </ul>
+
+                 </div>
+
+                 <div class="cvTitle text-center">{{cv.title}}</div>
+            </div>
+            <div class="photo col-md-4 text-center">
+                <img src="images/PhotoLucasMarmiesse.png" alt="photo" style="width:150px;border:5px double green;">
             
-          <div class="cvName text-center">{{cv.firstname}} {{cv.familyname}}</div>    
-            <div class="cvMail text-center"> <a ng-href="mailto:{{cv.email}}">
-                <i class="fa fa-envelope"></i>{{"  " + cv.email}}</a></div>
-          <div class="cvMail text-center">
-              
-              <ul class="links">
-                  <li><a ng-href="{{cv.github}}"><i class="fa fa-github"></i> GitHub</a></li>
-                  <li><a ng-href="{{cv.linkedin}}"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
-              </ul>
-              
-         </div> 
+            </div>
+        </div>            
             
-        <div class="cvTitle text-center">{{cv.title}}</div>
-            
+   
             
             
           <div class="cvTitles"><i class="fa fa-wrench"></i> {{cv.Skills.name}}</div>
