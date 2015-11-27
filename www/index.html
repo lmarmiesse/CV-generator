@@ -60,8 +60,6 @@
     </nav>
       
         
-        
-        
         <div id="home" class="container" ng-show="page==portal.About.url" ng-cloak>
           
               <p>{{portal.text1}}</p>
@@ -69,7 +67,6 @@
         </div> <!-- /container home-->
     
 
-        <div id="cv" class="container" ng-show="page==portal.CV.url" ng-cloak>
         <div id="cv" class="container" ng-show="page==portal.CV.url" ng-cloak>
             
             
@@ -79,8 +76,8 @@
           <div class="cvMail text-center">
               
               <ul class="links">
-                  <li><a href="https://github.com/lmarmiesse"><i class="fa fa-github"></i> GitHub</a></li>
-                  <li><a href="https://fr.linkedin.com/in/lucasmarmiesse"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                  <li><a ng-href="{{cv.github}}"><i class="fa fa-github"></i> GitHub</a></li>
+                  <li><a ng-href="{{cv.linkedin}}"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
               </ul>
               
          </div> 

@@ -38,8 +38,8 @@ a:hover
 }
 
 .container {
-padding-left:3.5em;
-padding-right:3.5em;
+    padding-left:3.5em;
+    padding-right:3.5em;
 }
 
 .footer {
@@ -80,12 +80,12 @@ padding-right:3.5em;
 
 .cvTitles{
     padding-top:10px;
-    font-size: 35px;
+    font-size: 30px;
     color:green;
 }
 
 .skillsCategs{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
     padding-top:10px;
     padding-bottom:10px;

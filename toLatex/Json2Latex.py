@@ -30,8 +30,8 @@ f2.write(
 %\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{"""+cv["email"].encode('utf8')+"""}                               % optional, remove / comment the line if not wanted
-%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\homepage{"""+cv["homepage"].encode('utf8')+"""}               % optional, remove / comment the line if not wanted
+\extrainfo{\n\includegraphics[width=10px]{images/github_logo.pdf} \httplink{"""+cv["github"].encode('utf8')+"""}\n\makenewline\n\includegraphics[width=10px]{images/linkedin_logo.pdf} \httplink{"""+cv["linkedin"].encode('utf8')+"""}}           % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}\n  
 """)
