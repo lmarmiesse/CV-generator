@@ -9,7 +9,6 @@ app.controller('myCtrl', function($scope, $http, $location, $sce) {
         $scope.page=$location.path().replace("/", "");
         
         if ($location.path()===""){
-            console.log("lol");
             $scope.page="CV";
         }
         
