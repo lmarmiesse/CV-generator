@@ -38,8 +38,10 @@ a:hover
 }
 
 .container {
-    padding-left:3.5em;
-    padding-right:3.5em;
+/*    padding-left:3.5em;
+    padding-right:3.5em;*/
+    padding-left:5%;
+    padding-right:5%;
 }
 
 .footer {
