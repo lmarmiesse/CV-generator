@@ -74,7 +74,7 @@
           "location": "Toulouse, France",
           "company": "Laboratoire des Interactions Plantes-Microorganismes (LIPM)",
           "date": "Depuis octobre 2013",
-          "description": "During my PhD, I initiated the mathematical modelling of a biological system studied by the group for years. It concerns the molecular networks involved in plant defense to pathogenic microorganisms. My work involved statistical analysis of large-scale heterogeneous datasets and data mining. I also developed a database and web interfaces to help data exploration and analysis (PostgreSQL, JavaScript, PHP, J2EE). I continued the development of a Java application called FlexFlux (See below). Also, a significant part of my time was dedicated to communication about my work (Presentations, Posters, conferences, scientific article writing).",
+          "description": "Durant ma thèse, j'ai initié la modélisation mathématique d'un système biologique étudié par l'équipe depuis des années. Il correspond aux réseaux moléculaires impliqués dans la défense de la plante face à des micro-orgnismes pathogènes. Mon travail a consisté en l'analyses statistique de données hétérogènes de grande échelle et à du data-mining. J'ai aussi développé une base de données ainsi qu'une interface web l'exploration et l'analyse des données (PostgreSQL, JavaScript, PHP, J2EE). J'ai continué le développement d'une application Java nomée FlexFlux (Voir plus bas). D'autre part, une partie non négligeable de mon temps a été dédiée à la communication au sujet de mon travail (Presentations, Posters, conférences, rédaction d'artciles scientifiques).",
           "supervisor": [
             {
               "name": "Susana Rivas",
@@ -87,11 +87,11 @@
           ]
         },
         {
-          "name": "Visiting student",
+          "name": "Séjour en tant qu'étudiant",
           "location": "Cambridge, UK",
           "company": "Babraham Institute",
           "date": "October 2015 - December 2015",
-          "description": "Three month stay in the group of Nicolas Le Novère. The goal was to develop an algorithm able to use large scale datasets to create bounds for Flux Balance Analysis. This can allow to identify specific metabolic profiles in different experimental conditions.",
+          "description": "Séjour de trois mois au sein du groupe de Nicolas Le Novère. Le but était de développer un algorithme capable d'utiliser des données de grande échelle pour créer des contraintes pour des analyses de flux métaboliques. Ceci peut permettre d'identifier des profils métaboliques spécifiques dans différentes conditions expérimentales.",
           "supervisor": [
             {
               "name": "Nicolas Le Novère",
@@ -104,7 +104,7 @@
           "location": "Toulouse, France",
           "company": "Laboratoire des Interactions Plantes-Microorganismes (LIPM)",
           "date": "Mars 2013 - Août 2013",
-          "description": "During this internship, I started the development of a Java application called FlexFlux (<a href=\"http://lipm-bioinfo.toulouse.inra.fr/flexflux/\">website</a>). It is dedicated to analyse metabolic network using FBA by integrating logical regulatory rules. FlexFlux features multi-thread calculations and otimisations making it one of the fastest FBA software available.",
+          "description": "Pendant ce stage, j'ai commencé le développement d'une application Java : FlexFlux (<a href=\"http://lipm-bioinfo.toulouse.inra.fr/flexflux/\">site web</a>). Elle est dédiée à l'analyse de réseaux métaboliques en utilisant la FBA et en intégrant des réseaux de régulation logiques. FlexFlux utilise la parallélisation (multi-thread) pour optimiser les calculs ainsi que certains astuces qui en font un des logiciels les plus rapides parmis ceux dédiés à la FBA.",
           "supervisor": [
             {
               "name": "Ludovic Cottret",
@@ -117,7 +117,7 @@
           "location": "Bordeaux, France",
           "company": "Institut National de la Recherche Agronomique (INRA)",
           "date": "Février 2012 - Mai 2012",
-          "description": "The goal of this project was to develop a web interface to use two applications dedicated to metabolic study and optimisation: PySCes and 13CFLUX2. We developed this interface using Lisp and CL-WHO.",
+          "description": "Le but de ce projet était de mettre en place une interface web pour utiliser deux applications dédiées l'analyse du métabolisme : PySCes and 13CFLUX2. Nous avons développé cette interface en utilisant Lisp et CL-WHO.",
           "supervisor": [
             {
               "name": "Sophie Colombié",
@@ -134,7 +134,7 @@
           "name": "Doctorat",
           "location": "Toulouse, France",
           "university": "Laboratoire des Interactions Plantes-Microorganismes (LIPM)",
-          "date": "Since october 2013",
+          "date": "Depuis octobre 2013",
           "description": ""
         },
         {
@@ -142,14 +142,14 @@
           "location": "Bordeaux, France",
           "university": "Université de Bordeaux",
           "date": "2011-2012",
-          "description": "Unix systems, Algorithmics, Software engineering, Oriented Object Programming (Java and C++), Design Patterns, Database design and management"
+          "description": "Systèmes Unix, Algorithmique, Créations d'applications, Programmation orientée objet (Java et C++), Design Patterns, Conception de bases de données"
         },
         {
           "name": "Licence de biologie",
           "location": "Bordeaux, France",
-          "university": "University of Bordeaux",
+          "university": "Université de Bordeaux",
           "date": "2009-2011",
-          "description": "Molecular and cellular biology and Physiology"
+          "description": "Biologie cellulaire et moléculaire, physiology"
         }
       ]
     },
@@ -160,7 +160,7 @@
           "name": "FlexFlux: combining metabolic flux and regulatory network analyses",
           "authors": [
             "Lucas Marmiesse",
-            "Remi Peyraud",
+            "Rémi Peyraud",
             "Ludovic Cottret"
           ],
           "year": 2015,
@@ -182,19 +182,19 @@
       ]
     },
      "Interests": {
-      "name": "Interests",
+      "name": "Centres d'intérêt",
       "values": [
         {
           "name": "Science",
-          "description": "I like to learn about"
+          "description": "J'aime essayer de comprendre la complexité de la vie, de l'univers ..."
         },
         {
-          "name": "Programming",
-          "description": "I'am always excited about starting new projects or adding features. I am particularly interested in web and mobile technologies."
+          "name": "Programmation",
+          "description": "L'idée de démarer de nouveaux projets ou d'ajouter de nouvelles fonctionalités me motivent toujours beaucoup. Je m'intéresse particulièrement technologies web et mobile."
         },
         {
-          "name": "Other",
-          "description": "I play the guitar (5 years of lessons), I like travels, movies ..."
+          "name": "Autres",
+          "description": "Je joue de la guitare (5 ans de cours), J'aime les voyages, le cinéma ..."
         }
       ]
     }

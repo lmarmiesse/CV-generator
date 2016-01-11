@@ -186,6 +186,16 @@
              <div class="cvTitles"><i class="fa fa-heart"></i> {{cv.Interests.name}}</div>
             <hr/>
             
+            <div ng-repeat="inter in cv.Interests.values">
+                <div class="publiName">{{inter.name}}</div>
+                <div class="publiAuthors">
+                    {{inter.description}}
+                </div>
+            </div>
+            
+            
+            
+            
         </div> <!-- /container cv-->
         
         
