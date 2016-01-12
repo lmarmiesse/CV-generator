@@ -50,6 +50,7 @@
           <ul class="nav navbar-nav">
             <li ng-class="{active: page==portal.About.url}"><a href="" ng-click="changePage(portal.About.url)">{{portal.About.name}}</a></li>
             <li ng-class="{active: page==portal.CV.url}"><a href="" ng-click="changePage(portal.CV.url)">{{portal.CV.name}}</a></li>
+            <li ><a ng-href="mailto:lucas.marmiesse@gmail.com">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
               <li><a class="flag" ng-click="changeLanguage('en')"  style="cursor: pointer;"><img src="images/uk_flag.png" alt="France flag" style="width:30px;height:30px;"></a></li>
@@ -62,8 +63,15 @@
         
         <div id="home" class="container" ng-show="page==portal.About.url" ng-cloak>
           
-              <p>{{portal.text1}}</p>
+            
+            
+            
+            
+            <p>{{portal.text1}}</p>
 
+            
+            
+            
         </div> <!-- /container home-->
     
 
