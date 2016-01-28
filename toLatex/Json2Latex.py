@@ -1,5 +1,6 @@
  # -*- coding: utf-8 -*-
 
+import re
 import json
 import codecs
 
@@ -21,6 +22,7 @@ f2.write("\documentclass[11pt,a4paper,sans]{moderncv}\n")
 f2.write("\moderncvstyle{classic}\n")
 f2.write("\moderncvcolor{green}\n")
 f2.write("\usepackage[utf8]{inputenc} \n")
+f2.write("\\newcommand\Colorhref[3][blue]{\href{#2}{\small\color{#1}#3}} \n")
 f2.write(
 """\usepackage[scale=0.80]{geometry}
 \\name{"""+cv["firstname"].encode('utf8')+"""}{"""+cv["familyname"].encode('utf8')+"""}
@@ -32,7 +34,7 @@ f2.write(
 \email{"""+cv["email"].encode('utf8')+"""}                               % optional, remove / comment the line if not wanted
 \homepage{"""+cv["homepage"].encode('utf8')+"""}               % optional, remove / comment the line if not wanted
 \extrainfo{\n\includegraphics[width=10px]{images/github_logo.pdf} \httplink{"""+cv["github"].encode('utf8')+"""}\n\makenewline\n\includegraphics[width=10px]{images/linkedin_logo.pdf} \httplink{"""+cv["linkedin"].encode('utf8')+"""}}           % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\photo[64pt][0.4pt]{images/PhotoLucasMarmiesse}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}\n  
 """)
 
@@ -74,8 +76,17 @@ for exp in exps["values"]:
 		else:
 			supervisors += ", "+superv["name"]
 	
+	descr = exp["description"].encode('utf8')
 	
-	f2.write("\cventry{"+exp["date"].encode('utf8')+"}{"+exp["name"].encode('utf8')+"}{"+exp["company"].encode('utf8')+"}{"+exp["location"].encode('utf8')+"}{}{"+exp["description"].encode('utf8')+" \\newline{} \\textit{"+exps["supervisorWord"].encode('utf8')+": "+supervisors.encode('utf8')+"}}\n")
+	m = re.search('<a href="(.+)">(.+)</a>', descr)
+	
+	if m!=None:
+		descr = descr.replace(m.group(0),"\Colorhref{"+m.group(1)+"}{"+m.group(2)+"}")
+	
+	
+	
+	
+	f2.write("\cventry{"+exp["date"].encode('utf8')+"}{"+exp["name"].encode('utf8')+"}{"+exp["company"].encode('utf8')+"}{"+exp["location"].encode('utf8')+"}{}{"+descr+" \\newline{} \\textit{"+exps["supervisorWord"].encode('utf8')+": "+supervisors.encode('utf8')+"}}\n")
 	
 	
 ####################################
@@ -120,10 +131,14 @@ for i in range(0,len(categ["subCateg"]),2):
 		
 #################################### 
 
-#################################### PUBLICATIONS
+#################################### Interests
 interests = cv["Interests"]
 
 f2.write("\section{"+interests["name"]+"}\n")
+
+for ints in interests["values"]:
+	f2.write("\cventry{}{"+ints["name"].encode('utf8')+"}{}{}{}{"+ints["description"]+"}\n")
+	
 	
 	
 #################################### 

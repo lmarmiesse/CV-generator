@@ -2,6 +2,7 @@
 \moderncvstyle{classic}
 \moderncvcolor{green}
 \usepackage[utf8]{inputenc} 
+\newcommand\Colorhref[3][blue]{\href{#2}{\small\color{#1}#3}} 
 \usepackage[scale=0.80]{geometry}
 \name{Lucas}{Marmiesse}
 \title{Computer scientist}                               
@@ -15,7 +16,7 @@
 \includegraphics[width=10px]{images/github_logo.pdf} \httplink{github.com/lmarmiesse}
 \makenewline
 \includegraphics[width=10px]{images/linkedin_logo.pdf} \httplink{fr.linkedin.com/in/lucasmarmiesse}}           % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\photo[64pt][0.4pt]{images/PhotoLucasMarmiesse}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}
   
 \begin{document}
@@ -29,15 +30,18 @@
 \section{Experiences}
 \cventry{Since October 2013}{PhD}{Laboratoire des Interactions Plantes-Microorganismes (LIPM)}{Toulouse, France}{}{During my PhD, I initiated the mathematical modelling of a biological system studied by the group for years. It concerns the molecular networks involved in plant defense to pathogenic microorganisms. My work involved statistical analysis of large-scale heterogeneous datasets and data mining. I also developed a database and web interfaces to help data exploration and analysis (PostgreSQL, JavaScript, PHP, J2EE). I continued the development of a Java application called FlexFlux (See below). Also, a significant part of my time was dedicated to communication about my work (Presentations, Posters, conferences, scientific article writing). \newline{} \textit{Supervisor: Susana Rivas, Philippe Besse}}
 \cventry{October 2015 - December 2015}{Visiting student}{Babraham Institute}{Cambridge, UK}{}{Three month stay in the group of Nicolas Le Novère. The goal was to develop an algorithm able to use large scale datasets to create bounds for Flux Balance Analysis. This can allow to identify specific metabolic profiles in different experimental conditions. \newline{} \textit{Supervisor: Nicolas Le Novère}}
-\cventry{Marth 2013 - August 2013}{Master’s intership}{Laboratoire des Interactions Plantes-Microorganismes (LIPM)}{Toulouse, France}{}{During this internship, I started the development of a Java application called FlexFlux (<a href="http://lipm-bioinfo.toulouse.inra.fr/flexflux/">website</a>). It is dedicated to analyse metabolic network using FBA by integrating logical regulatory rules. FlexFlux features multi-thread calculations and otimisations making it one of the fastest FBA software available. \newline{} \textit{Supervisor: Ludovic Cottret}}
+\cventry{Marth 2013 - August 2013}{Master’s intership}{Laboratoire des Interactions Plantes-Microorganismes (LIPM)}{Toulouse, France}{}{During this internship, I started the development of a Java application called FlexFlux (\Colorhref{http://lipm-bioinfo.toulouse.inra.fr/flexflux/}{website}). It is dedicated to analyse metabolic network using FBA by integrating logical regulatory rules. FlexFlux features multi-thread calculations and otimisations making it one of the fastest FBA software available. \newline{} \textit{Supervisor: Ludovic Cottret}}
 \cventry{February 2012 - May 2012}{Programming project}{Institut National de la Recherche Agronomique (INRA)}{Bordeaux, France}{}{The goal of this project was to develop a web interface to use two applications dedicated to metabolic study and optimisation: PySCes and 13CFLUX2. We developed this interface using Lisp and CL-WHO. \newline{} \textit{Supervisor: Sophie Colombié}}
 \section{Education}
-\cventry{Since october 2013}{PhD}{Laboratoire des Interactions Plantes-Microorganismes (LIPM)}{Toulouse, France}{}{see Experiences}
+\cventry{Since october 2013}{PhD}{Laboratoire des Interactions Plantes-Microorganismes (LIPM)}{Toulouse, France}{}{}
 \cventry{2011-2012}{Master degree in Bio-informatics}{University of Bordeaux}{Bordeaux, France}{}{Unix systems, Algorithmics, Software engineering, Oriented Object Programming (Java and C++), Design Patterns, Database design and management}
 \cventry{2009-2011}{Bachelor of Science in biology}{University of Bordeaux}{Bordeaux, France}{}{Molecular and cellular biology and Physiology}
 \section{Publications}
-\cventry{}{FlexFlux: combining metabolic flux and regulatory network analyses}{}{}{}{Lucas Marmiesse, Remi Peyraud, Ludovic Cottret\newline{} \textit{BMC Systems Biology}, 2015}
+\cventry{}{FlexFlux: combining metabolic flux and regulatory network analyses}{}{}{}{Lucas Marmiesse, Rémi Peyraud, Ludovic Cottret\newline{} \textit{BMC Systems Biology}, 2015}
 \section{Languages}
 \cvdoubleitem{French}{Native}{English}{Fluent}
 \section{Interests}
+\cventry{}{Science}{}{}{}{I like to learn about the complexity of life, the universe ...}
+\cventry{}{Programming}{}{}{}{I'am always excited about starting new projects or adding features. I am particularly interested in web and mobile technologies.}
+\cventry{}{Other}{}{}{}{I play the guitar (5 years of lessons), I like travels, movies ...}
 \end{document}
