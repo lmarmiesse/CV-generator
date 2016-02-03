@@ -3,4 +3,4 @@ small HTML and PDF CV generator from a unique JSON file
 
 The HTML CV is generated using Bootstrap & AngularJS
 
-The PDF CV is generated with a python script and modern-cv for LaTeX
+The PDF CV is generated with a python script & modern-cv for LaTeX
