@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{green}
+\usepackage[utf8]{inputenc} 
+\newcommand\Colorhref[3][blue]{\href{#2}{\small\color{#1}#3}} 
+\usepackage[scale=0.80]{geometry}
+\name{Lucas}{Marmiesse}
+\title{Computer scientist}                               
+%\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+%\phone[mobile]{+1~(234)~567~890}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{lucas.marmiesse@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.lucasmarmiesse.net}               % optional, remove / comment the line if not wanted
+\extrainfo{
+\includegraphics[width=10px]{images/github_logo.pdf} \httplink{github.com/lmarmiesse}
+\makenewline
+\includegraphics[width=10px]{images/linkedin_logo.pdf} \httplink{fr.linkedin.com/in/lucasmarmiesse}}           % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{images/PhotoLucasMarmiesse}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}
+  
+\begin{document}
+\makecvtitle
+\section{Compétences}
+\subsection{Informatique}
+\cvdoubleitem{\textbf{Langages}}{Java, Python, JavaScript, R}{\textbf{Web}}{HTML, CSS, JavaScript, jQuery}
+\cvdoubleitem{\textbf{Autre}}{PostgreSQL, LaTeX, Systèmes Unix, Inkscape}{}{}
+\subsection{Bio-informatique}
+\cvdoubleitem{\textbf{Biologie des systèmes}}{Modélisation du métabolisme, Flux Balance Analysis, Modélisation de réseaux de gènes, Modèles logiques}{\textbf{Analyse de données}}{Analyse de données transcriptomiques, Integration de données hétérogènes}
+\section{Experiences}
+\cventry[1em]{Depuis octobre 2013}{Doctorat}{Laboratoire des Interactions Plantes-Microorganismes (LIPM)}{Toulouse, France}{}{Durant ma thèse, j'ai initié la modélisation mathématique d'un système biologique étudié par l'équipe depuis des années. Il correspond aux réseaux moléculaires impliqués dans la défense de la plante face à des micro-orgnismes pathogènes. Mon travail a consisté en l'analyses statistique de données hétérogènes de grande échelle et à du data-mining. J'ai aussi développé une base de données ainsi qu'une interface web dédiée à l'exploration et l'analyse des données (PostgreSQL, JavaScript, PHP, J2EE). J'ai continué le développement d'une application Java nomée FlexFlux (Voir plus bas). D'autre part, une partie non négligeable de mon temps a été dédiée à la communication au sujet de mon travail (Presentations, Posters, conférences, rédaction d'artciles scientifiques). \newline{} \textit{Superviseur: Susana Rivas, Philippe Besse}}
+\cventry[1em]{October 2015 - December 2015}{Séjour en tant qu'étudiant}{Babraham Institute}{Cambridge, UK}{}{Séjour de trois mois au sein du groupe de Nicolas Le Novère. Le but était de développer un algorithme capable d'utiliser des données de grande échelle pour créer des contraintes pour des analyses de flux métaboliques. Ceci peut permettre d'identifier des profils métaboliques spécifiques dans différentes conditions expérimentales. \newline{} \textit{Superviseur: Nicolas Le Novère}}
+\cventry[1em]{Mars 2013 - Août 2013}{Stage de master 2}{Laboratoire des Interactions Plantes-Microorganismes (LIPM)}{Toulouse, France}{}{Pendant ce stage, j'ai commencé le développement d'une application Java : FlexFlux (\Colorhref{http://lipm-bioinfo.toulouse.inra.fr/flexflux/}{site web}). Elle est dédiée à l'analyse de réseaux métaboliques en utilisant la FBA et en intégrant des réseaux de régulation logiques. FlexFlux utilise la parallélisation (multi-thread) pour optimiser les calculs ainsi que certains astuces qui en font un des logiciels les plus rapides parmis ceux dédiés à la FBA. \newline{} \textit{Superviseur: Ludovic Cottret}}
+\cventry[1em]{Février 2012 - Mai 2012}{Projet de programmation}{Institut National de la Recherche Agronomique (INRA)}{Bordeaux, France}{}{Le but de ce projet était de mettre en place une interface web pour utiliser deux applications dédiées l'analyse du métabolisme : PySCes and 13CFLUX2. Nous avons développé cette interface en utilisant Lisp et CL-WHO. \newline{} \textit{Superviseur: Sophie Colombié}}
+\section{Etudes}
+\cventry[1em]{Depuis octobre 2013}{Doctorat}{Laboratoire des Interactions Plantes-Microorganismes (LIPM)}{Toulouse, France}{}{}
+\cventry[1em]{2011-2012}{Master en Bio-informatique}{Université de Bordeaux}{Bordeaux, France}{}{Systèmes Unix, Algorithmique, Créations d'applications, Programmation orientée objet (Java et C++), Design Patterns, Conception de bases de données}
+\cventry[1em]{2009-2011}{Licence de biologie}{Université de Bordeaux}{Bordeaux, France}{}{Biologie cellulaire et moléculaire, physiology}
+\section{Publications}
+\cventry[1em]{}{FlexFlux: combining metabolic flux and regulatory network analyses}{}{}{}{Lucas Marmiesse, Rémi Peyraud, Ludovic Cottret\newline{} \textit{BMC Systems Biology}, 2015}
+\section{Références}
+\cvdoubleitem[1em]{\textbf{Ludovic Cottret}}{Ingénieur de recherche, Laboratoire des Interactions Plantes-Microorganismes (LIPM)\newline \emailsymbol Ludovic.Cottret@toulouse.inra.fr\newline \phonesymbol +33 5 61 28 57 06}{\textbf{Susana Rivas}}{Chef d'équipe au Laboratoire des Interactions Plantes-Microorganismes (LIPM)\newline \emailsymbol Susana.Rivas@toulouse.inra.fr\newline \phonesymbol +33 5 61 28 53 26}
+\cvdoubleitem[1em]{\textbf{Philippe Besse}}{Professeur à l'INSA, Département ode Génie Mathématique et Modélisation\newline \emailsymbol philippe.besse@math.univ-toulouse.fr}{\textbf{Marie Beurton-Aimar}}{Responsable du Master bio-informatique de Bordeaux\newline \emailsymbol beurton@labri.u-bordeaux.fr\newline \phonesymbol +33 5 40 00 35 25}
+\section{Langues}
+\cvdoubleitem[1em]{Français}{Langue maternelle}{Anglais}{Courant}
+\section{Centres d'intérêt}
+\cventry[1em]{}{Science}{}{}{}{J'aime essayer de comprendre la complexité de la vie, de l'univers...}
+\cventry[1em]{}{Programmation}{}{}{}{L'idée de démarer de nouveaux projets ou d'ajouter de nouvelles fonctionalités me motive toujours beaucoup. Je m'intéresse particulièrement technologies web et mobile.}
+\cventry[1em]{}{Autres}{}{}{}{Je joue de la guitare (5 ans de cours), J'aime les voyages, le cinéma...}
+\end{document}

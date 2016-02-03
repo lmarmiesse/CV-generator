@@ -186,7 +186,7 @@
       "values": [
         {
           "name": "Science",
-          "description": "I like to learn about the complexity of life, the universe ..."
+          "description": "I like to learn about the complexity of life, the universe..."
         },
         {
           "name": "Programming",
@@ -194,7 +194,35 @@
         },
         {
           "name": "Other",
-          "description": "I play the guitar (5 years of lessons), I like travels, movies ..."
+          "description": "I play the guitar (5 years of lessons), I like travels, movies..."
+        }
+      ]
+    },
+     "References": {
+      "name": "References",
+      "values": [
+        {
+          "name": "Ludovic Cottret",
+          "description": "Bioinformatics engineer, Laboratory of Plant-Microbe Interactions (LIPM)",
+          "mail": "Ludovic.Cottret@toulouse.inra.fr",
+          "phone": "+33 5 61 28 57 06"
+        },
+        {
+          "name": "Susana Rivas",
+          "description": "Group leader at the Laboratory of Plant-Microbe Interactions (LIPM)",
+          "mail": "Susana.Rivas@toulouse.inra.fr",
+          "phone": "+33 5 61 28 53 26"
+        },
+        {
+          "name": "Philippe Besse",
+          "description": "Professeur at INSA, Departement of Génie Mathématique et Modélisation",
+          "mail": "philippe.besse@math.univ-toulouse.fr"
+        },
+        {
+          "name": "Marie Beurton-Aimar",
+          "description": "In charge of the Master's in Bioinformatic of Bordeaux",
+          "mail": "beurton@labri.u-bordeaux.fr",
+          "phone": "+33 5 40 00 35 25"
         }
       ]
     }

@@ -4,8 +4,11 @@ import re
 import json
 import codecs
 
-inFile = "../www/ressources/CV-en.json"
-outFile = "latex/CV-en.tex"
+#~ inFile = "../www/ressources/CV-en.json"
+#~ outFile = "latex/CV-en.tex"
+
+inFile = "../www/ressources/CV-fr.json"
+outFile = "latex/CV-fr.tex"
 
 f = open(inFile,"r")
 f2 = open(outFile,"w")
@@ -44,7 +47,7 @@ f2.write("\makecvtitle\n")
 #################################### SKILLS
 skills = cv["Skills"]
 
-f2.write("\section{"+skills["name"]+"}\n")
+f2.write("\section{"+skills["name"].encode('utf8')+"}\n")
 for categ in skills["values"]:
 	f2.write("\subsection{"+categ["name"]+"}\n")
 	
@@ -55,10 +58,10 @@ for categ in skills["values"]:
 
 		if i+1<len(categ["subCateg"]):
 			cat2 = categ["subCateg"][i+1]
-			f2.write("\cvdoubleitem{"+cat1["name"]+"}{"+", ".join(cat1["values"])+"}{"+cat2["name"]+"}{"+", ".join(cat2["values"])+"}\n")
+			f2.write("\cvdoubleitem{\\textbf{"+cat1["name"].encode('utf8')+"}}{"+", ".join(cat1["values"]).encode('utf8')+"}{\\textbf{"+cat2["name"].encode('utf8')+"}}{"+", ".join(cat2["values"]).encode('utf8')+"}\n")
 	
 		else:
-			f2.write("\cvdoubleitem{"+cat1["name"]+"}{"+", ".join(cat1["values"])+"}{}{}\n")
+			f2.write("\cvdoubleitem{\\textbf{"+cat1["name"].encode('utf8')+"}}{"+", ".join(cat1["values"]).encode('utf8')+"}{}{}\n")
 	
 #################################### 
 
@@ -86,7 +89,7 @@ for exp in exps["values"]:
 	
 	
 	
-	f2.write("\cventry{"+exp["date"].encode('utf8')+"}{"+exp["name"].encode('utf8')+"}{"+exp["company"].encode('utf8')+"}{"+exp["location"].encode('utf8')+"}{}{"+descr+" \\newline{} \\textit{"+exps["supervisorWord"].encode('utf8')+": "+supervisors.encode('utf8')+"}}\n")
+	f2.write("\cventry[1em]{"+exp["date"].encode('utf8')+"}{"+exp["name"].encode('utf8')+"}{"+exp["company"].encode('utf8')+"}{"+exp["location"].encode('utf8')+"}{}{"+descr+" \\newline{} \\textit{"+exps["supervisorWord"].encode('utf8')+": "+supervisors.encode('utf8')+"}}\n")
 	
 	
 ####################################
@@ -96,7 +99,7 @@ edu = cv["Education"]
 
 f2.write("\section{"+edu["name"]+"}\n")
 for ed in edu["values"]:
-	f2.write("\cventry{"+ed["date"].encode('utf8')+"}{"+ed["name"].encode('utf8')+"}{"+ed["university"].encode('utf8')+"}{"+ed["location"].encode('utf8')+"}{}{"+ed["description"].encode('utf8')+"}\n")
+	f2.write("\cventry[1em]{"+ed["date"].encode('utf8')+"}{"+ed["name"].encode('utf8')+"}{"+ed["university"].encode('utf8')+"}{"+ed["location"].encode('utf8')+"}{}{"+ed["description"].encode('utf8')+"}\n")
 	
 	
 #################################### 
@@ -107,37 +110,69 @@ pubs = cv["Publications"]
 
 f2.write("\section{"+pubs["name"]+"}\n")
 for pub in pubs["values"]:
-	f2.write("\cventry{}{"+pub["name"].encode('utf8')+"}{}{}{}{"+", ".join(pub["authors"]).encode('utf8')+"\\newline{} \\textit{"+pub["journal"].encode('utf8')+"}, "+str(pub["year"]).encode('utf8')+"}\n")
+	f2.write("\cventry[1em]{}{"+pub["name"].encode('utf8')+"}{}{}{}{"+", ".join(pub["authors"]).encode('utf8')+"\\newline{} \\textit{"+pub["journal"].encode('utf8')+"}, "+str(pub["year"]).encode('utf8')+"}\n")
 	
 	
 #################################### 
 
+#################################### References
+refs = cv["References"]
+
+f2.write("\section{"+refs["name"].encode('utf8')+"}\n")
+
+for i in range(0,len(refs["values"]),2):
+		
+	ref1 = refs["values"][i]
+	
+	descr1 = ref1["description"].encode('utf8')
+	if ref1.has_key("mail"):
+		descr1+="\\newline \emailsymbol "+ref1["mail"].encode('utf8')
+		
+	if ref1.has_key("phone"):
+		descr1+="\\newline \phonesymbol "+ref1["phone"].encode('utf8')
+	
+	if i+1<len(refs["values"]):
+		ref2 = refs["values"][i+1]
+		
+		descr2 = ref2["description"].encode('utf8')
+		if ref2.has_key("mail"):
+			descr2+="\\newline \emailsymbol "+ref2["mail"].encode('utf8')
+		
+		if ref2.has_key("phone"):
+			descr2+="\\newline \phonesymbol "+ref2["phone"].encode('utf8')
+		
+		f2.write("\cvdoubleitem[1em]{\\textbf{"+ref1["name"].encode('utf8')+"}}{"+descr1+"}{\\textbf{"+ref2["name"].encode('utf8')+"}}{"+descr2+"}\n")
+	else:
+		f2.write("\cvdoubleitem[1em]{\\textbf{"+ref1["name"].encode('utf8')+"}}{"+descr1+"}{}{}\n")
+
+	
+#################################### 
 
 #################################### Languages
 langs = cv["Languages"]
 
 f2.write("\section{"+langs["name"]+"}\n")
 
-for i in range(0,len(categ["subCateg"]),2):
+for i in range(0,len(langs["values"]),2):
 		
 	lang1 = langs["values"][i]
 
-	if i+1<len(categ["subCateg"]):
+	if i+1<len(langs["values"]):
 		lang2 = langs["values"][i+1]
-		f2.write("\cvdoubleitem{"+lang1["name"]+"}{"+lang1["level"]+"}{"+lang2["name"]+"}{"+lang2["level"]+"}\n")
+		f2.write("\cvdoubleitem[1em]{"+lang1["name"].encode('utf8')+"}{"+lang1["level"].encode('utf8')+"}{"+lang2["name"].encode('utf8')+"}{"+lang2["level"].encode('utf8')+"}\n")
 	
 	else:
-		f2.write("\cvdoubleitem{"+lang1["name"]+"}{"+lang1["level"]+"}{}{}\n")
+		f2.write("\cvdoubleitem[1em]{"+lang1["name"].encode('utf8')+"}{"+lang1["level"].encode('utf8')+"}{}{}\n")
 		
 #################################### 
 
 #################################### Interests
 interests = cv["Interests"]
 
-f2.write("\section{"+interests["name"]+"}\n")
+f2.write("\section{"+interests["name"].encode('utf8')+"}\n")
 
 for ints in interests["values"]:
-	f2.write("\cventry{}{"+ints["name"].encode('utf8')+"}{}{}{}{"+ints["description"]+"}\n")
+	f2.write("\cventry[1em]{}{"+ints["name"].encode('utf8')+"}{}{}{}{"+ints["description"].encode('utf8')+"}\n")
 	
 	
 	
