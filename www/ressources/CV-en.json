@@ -208,6 +208,12 @@
           "phone": "+33 5 61 28 57 06"
         },
         {
+          "name": "Remi Peyraud",
+          "description": "Post-doctoral researcher, Laboratory of Plant-Microbe Interactions (LIPM)",
+          "mail": "remi.peyraud@toulouse.inra.fr",
+          "phone": "+33 5 61 28 57 79"
+        },
+        {
           "name": "Susana Rivas",
           "description": "Group leader at the Laboratory of Plant-Microbe Interactions (LIPM)",
           "mail": "Susana.Rivas@toulouse.inra.fr",
@@ -217,12 +223,6 @@
           "name": "Philippe Besse",
           "description": "Professeur at INSA, Departement of Génie Mathématique et Modélisation",
           "mail": "philippe.besse@math.univ-toulouse.fr"
-        },
-        {
-          "name": "Marie Beurton-Aimar",
-          "description": "In charge of the Master's in Bioinformatic of Bordeaux",
-          "mail": "beurton@labri.u-bordeaux.fr",
-          "phone": "+33 5 40 00 35 25"
         }
       ]
     }

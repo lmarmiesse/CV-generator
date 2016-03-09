@@ -66,7 +66,7 @@
       ]
     },
     "Experiences": {
-      "name": "Experiences",
+      "name": "Expériences",
       "supervisorWord": "Superviseur",
       "values": [
         {
@@ -128,7 +128,7 @@
       ]
     },
     "Education": {
-      "name": "Etudes",
+      "name": "Études",
       "values": [
         {
           "name": "Doctorat",
@@ -208,6 +208,12 @@
           "phone": "+33 5 61 28 57 06"
         },
         {
+          "name": "Remi Peyraud",
+          "description": "Chercheur postdoctoral, Laboratoire des Interactions Plantes-Microorganismes (LIPM)",
+          "mail": "remi.peyraud@toulouse.inra.fr",
+          "phone": "+33 5 61 28 57 79"
+        },
+        {
           "name": "Susana Rivas",
           "description": "Chef d'équipe au Laboratoire des Interactions Plantes-Microorganismes (LIPM)",
           "mail": "Susana.Rivas@toulouse.inra.fr",
@@ -217,12 +223,6 @@
           "name": "Philippe Besse",
           "description": "Professeur à l'INSA, Département ode Génie Mathématique et Modélisation",
           "mail": "philippe.besse@math.univ-toulouse.fr"
-        },
-        {
-          "name": "Marie Beurton-Aimar",
-          "description": "Responsable du Master bio-informatique de Bordeaux",
-          "mail": "beurton@labri.u-bordeaux.fr",
-          "phone": "+33 5 40 00 35 25"
         }
       ]
     }

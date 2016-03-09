@@ -69,7 +69,7 @@ for categ in skills["values"]:
 #################################### EXPERIENCES
 exps = cv["Experiences"]
 
-f2.write("\section{"+exps["name"]+"}\n")
+f2.write("\section{"+exps["name"].encode('utf8')+"}\n")
 for exp in exps["values"]:
 	
 	supervisors = ""
@@ -97,7 +97,7 @@ for exp in exps["values"]:
 #################################### EDUCATION
 edu = cv["Education"]
 
-f2.write("\section{"+edu["name"]+"}\n")
+f2.write("\section{"+edu["name"].encode('utf8')+"}\n")
 for ed in edu["values"]:
 	f2.write("\cventry[1em]{"+ed["date"].encode('utf8')+"}{"+ed["name"].encode('utf8')+"}{"+ed["university"].encode('utf8')+"}{"+ed["location"].encode('utf8')+"}{}{"+ed["description"].encode('utf8')+"}\n")
 	
@@ -126,7 +126,7 @@ for i in range(0,len(refs["values"]),2):
 	
 	descr1 = ref1["description"].encode('utf8')
 	if ref1.has_key("mail"):
-		descr1+="\\newline \emailsymbol "+ref1["mail"].encode('utf8')
+		descr1+="\\newline \emailsymbol \mbox{"+ref1["mail"].encode('utf8')+"}"
 		
 	if ref1.has_key("phone"):
 		descr1+="\\newline \phonesymbol "+ref1["phone"].encode('utf8')
@@ -136,7 +136,7 @@ for i in range(0,len(refs["values"]),2):
 		
 		descr2 = ref2["description"].encode('utf8')
 		if ref2.has_key("mail"):
-			descr2+="\\newline \emailsymbol "+ref2["mail"].encode('utf8')
+			descr2+="\\newline \emailsymbol \mbox{"+ref2["mail"].encode('utf8')+"}"
 		
 		if ref2.has_key("phone"):
 			descr2+="\\newline \phonesymbol "+ref2["phone"].encode('utf8')
