@@ -74,7 +74,7 @@
           "location": "Toulouse, France",
           "company": "Laboratoire des Interactions Plantes-Microorganismes (LIPM)",
           "date": "Depuis octobre 2013",
-          "description": "Durant ma thèse, j'ai initié la modélisation mathématique d'un système biologique étudié par l'équipe depuis des années. Il correspond aux réseaux moléculaires impliqués dans la défense de la plante face à des micro-orgnismes pathogènes. Mon travail a consisté en l'analyses statistique de données hétérogènes de grande échelle et à du data-mining. J'ai aussi développé une base de données ainsi qu'une interface web dédiée à l'exploration et l'analyse des données (PostgreSQL, JavaScript, PHP, J2EE). J'ai continué le développement d'une application Java nomée FlexFlux (Voir plus bas). D'autre part, une partie non négligeable de mon temps a été dédiée à la communication au sujet de mon travail (Presentations, Posters, conférences, rédaction d'artciles scientifiques).",
+          "description": "Durant ma thèse, j'ai initié la modélisation mathématique d'un système biologique étudié par l'équipe depuis des années. Il correspond aux réseaux moléculaires impliqués dans la défense de la plante face à des micro-orgnismes pathogènes. Mon travail a consisté en l'analyses statistique de données hétérogènes de grande échelle et à du data-mining. J'ai aussi développé une base de données ainsi qu'une interface web dédiée à l'exploration et l'analyse des données (PostgreSQL, JavaScript, PHP, J2EE). J'ai continué le développement d'une application Java nomée FlexFlux (Voir plus bas). D'autre part, une partie non négligeable de mon temps a été dédiée à la communication au sujet de mon travail (Présentations, Posters, conférences, rédaction d'articles scientifiques).",
           "supervisor": [
             {
               "name": "Susana Rivas",
@@ -104,7 +104,7 @@
           "location": "Toulouse, France",
           "company": "Laboratoire des Interactions Plantes-Microorganismes (LIPM)",
           "date": "Mars 2013 - Août 2013",
-          "description": "Pendant ce stage, j'ai commencé le développement d'une application Java : FlexFlux (<a href=\"http://lipm-bioinfo.toulouse.inra.fr/flexflux/\">site web</a>). Elle est dédiée à l'analyse de réseaux métaboliques en utilisant la FBA et en intégrant des réseaux de régulation logiques. FlexFlux utilise la parallélisation (multi-thread) pour optimiser les calculs ainsi que certains astuces qui en font un des logiciels les plus rapides parmis ceux dédiés à la FBA.",
+          "description": "Pendant ce stage, j'ai commencé le développement d'une application Java : FlexFlux (<a href=\"http://lipm-bioinfo.toulouse.inra.fr/flexflux/\">site web</a>). Elle est dédiée à l'analyse de réseaux métaboliques en utilisant la FBA et en intégrant des réseaux de régulation logiques. FlexFlux utilise la parallélisation (multi-thread) pour optimiser les calculs ainsi que certains astuces qui en font un des logiciels les plus rapides parmi ceux dédiés à la FBA.",
           "supervisor": [
             {
               "name": "Ludovic Cottret",
