@@ -110,8 +110,8 @@ pubs = cv["Publications"]
 
 f2.write("\section{"+pubs["name"]+"}\n")
 for pub in pubs["values"]:
-	f2.write("\cventry[1em]{}{"+pub["name"].encode('utf8')+"}{}{}{}{"+", ".join(pub["authors"]).encode('utf8')+"\\newline{} \\textit{"+pub["journal"].encode('utf8')+"}, "+str(pub["year"]).encode('utf8')+"}\n")
-	
+	f2.write("\cventry[1em]{}{"+pub["name"].encode('utf8').replace("<i>","\\textit{").replace("</i>","}")+"}{}{}{}{"+", ".join(pub["authors"]).encode('utf8')+"\\newline{} \\textit{"+pub["journal"].encode('utf8')+"}, "+str(pub["year"]).encode('utf8')+"}\n")
+	print pub["name"]
 	
 #################################### 
 

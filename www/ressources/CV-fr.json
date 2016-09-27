@@ -165,6 +165,18 @@
           ],
           "year": 2015,
           "journal": "BMC Systems Biology"
+        },
+        {
+          "name": "A resource allocation trade-off between virulence and proliferation drives metabolic versatility in the plant pathogen <i>Ralstonia solanacearum</i>",
+          "authors": [
+            "Rémi Peyraud",
+            "Ludovic Cottret",
+            "Lucas Marmiesse",
+            "Jérome Gouzy",
+            "Stéphane Génin"
+          ],
+          "year": 2016,
+          "journal": "PLOS Pathogens"
         }
       ]
     },
