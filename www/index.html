@@ -22,6 +22,7 @@
       
     <link rel="stylesheet" href="ressources/font-awesome-4.5.0/css/font-awesome.min.css">
     <script src="js/angular.min.js"></script>
+    <script src="js/angular-sanitize.js"></script>
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -53,8 +54,8 @@
             <li ><a ng-href="mailto:lucas.marmiesse@gmail.com">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-              <li><a class="flag" ng-click="changeLanguage('en')"  style="cursor: pointer;"><img src="images/uk_flag.png" alt="France flag" style="width:30px;height:30px;"></a></li>
-              <li><a class="flag" ng-click="changeLanguage('fr')"  style="cursor: pointer;"><img src="images/france_flag.png" alt="France flag" style="width:30px;height:30px;"></a></li>
+              <li><a class="flag" ng-click="changeLanguage('en')"  style="cursor: pointer;"><img src="images/Uk.png" alt="France flag" style="width:44px;height:30px;"></a></li>
+              <li><a class="flag" ng-click="changeLanguage('fr')"  style="cursor: pointer;"><img src="images/France.png" alt="France flag" style="width:44px;height:30px;"></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -183,13 +184,16 @@
             <div class="cvTitles"><i class="fa fa-pencil"></i> {{cv.Publications.name}}</div>
             <hr/>
             <div ng-repeat="publi in cv.Publications.values">
-                <div class="publiName">{{publi.name}}</div>
+		
+               
+		<div class="publiName" ng-bind-html="publi.name"></div>
                 <div class="publiAuthors">
                     <span ng-repeat="author in publi.authors">
                         {{author}}{{$last ? '' : ', '}}
                     </span>
                 </div>
                 <div class="publiJournal"><i>{{publi.journal}}</i>, {{publi.year}}</div>
+		<br/>
             </div>
             
             
