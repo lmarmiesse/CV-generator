@@ -73,7 +73,7 @@
           "name": "PhD",
           "location": "Toulouse, France",
           "company": "Laboratoire des Interactions Plantes-Microorganismes (LIPM)",
-          "date": "October 2013 - October 2016",
+          "date": "Since October 2013",
           "description": "During my PhD, I initiated the mathematical modelling of a biological system studied by the group for years. It concerns the molecular networks involved in plant defense to pathogenic microorganisms. My work involved statistical analysis of large-scale heterogeneous datasets and data mining. I also developed a database and web interfaces to help data exploration and analysis (PostgreSQL, JavaScript, PHP, J2EE). I continued the development of a Java application called FlexFlux (See below). Also, a significant part of my time was dedicated to communication about my work (Presentations, Posters, conferences, scientific article writing).",
           "supervisor": [
             {
@@ -134,7 +134,7 @@
           "name": "PhD",
           "location": "Toulouse, France",
           "university": "Laboratoire des Interactions Plantes-Microorganismes (LIPM)",
-          "date": "2013 - 2016",
+          "date": "Since october 2013",
           "description": ""
         },
         {
