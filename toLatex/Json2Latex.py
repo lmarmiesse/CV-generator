@@ -4,11 +4,11 @@ import re
 import json
 import codecs
 
-#~ inFile = "../www/ressources/CV-en.json"
-#~ outFile = "latex/CV-en.tex"
-
-inFile = "../www/ressources/CV-fr.json"
-outFile = "latex/CV-fr.tex"
+inFile = "../www/ressources/CV-en.json"
+outFile = "latex/CV-en.tex"
+#~ 
+#~ inFile = "../www/ressources/CV-fr.json"
+#~ outFile = "latex/CV-fr.tex"
 
 f = open(inFile,"r")
 f2 = open(outFile,"w")
