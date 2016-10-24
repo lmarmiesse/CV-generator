@@ -28,13 +28,14 @@
                 "HTML",
                 "CSS",
                 "JavaScript",
-                "jQuery"
+                "jQuery",
+                "PHP"
               ]
             },
             {
               "name": "Autre",
               "values": [
-                "PostgreSQL",
+                "SQL",
                 "LaTeX",
                 "Systèmes Unix",
                 "Inkscape"
