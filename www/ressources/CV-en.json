@@ -33,6 +33,14 @@
               ]
             },
             {
+              "name": "Data analysis",
+              "values": [
+                "Data mining",
+                "Optimisation",
+                "Machine learning"
+              ]
+            },
+            {
               "name": "Other",
               "values": [
                 "SQL",
