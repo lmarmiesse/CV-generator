@@ -2,10 +2,11 @@
   "CV": {
     "firstname": "Lucas",
     "familyname": "Marmiesse",
-    "title": "Computer scientist",
+    "title": "Développeur d'applications",
     "email": "lucas.marmiesse@gmail.com",
     "homepage": "www.lucasmarmiesse.net",
     "github": "github.com/lmarmiesse",
+    "phone_number": "06 78 17 25 37",
     "linkedin": "fr.linkedin.com/in/lucasmarmiesse",
     "Skills": {
       "name": "Compétences",
@@ -43,6 +44,7 @@
             {
               "name": "Autre",
               "values": [
+                "Design patterns",  
                 "SQL",
                 "LaTeX",
                 "Systèmes Unix",

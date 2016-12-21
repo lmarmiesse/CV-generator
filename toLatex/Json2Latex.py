@@ -1,14 +1,14 @@
- # -*- coding: utf-8 -*-
+# coding: utf8
 
 import re
 import json
 import codecs
 
-inFile = "../www/ressources/CV-en.json"
-outFile = "latex/CV-en.tex"
+#~ inFile = "../www/ressources/CV-en.json"
+#~ outFile = "latex/CV-en.tex"
 #~ 
-#~ inFile = "../www/ressources/CV-fr.json"
-#~ outFile = "latex/CV-fr.tex"
+inFile = "../www/ressources/CV-fr.json"
+outFile = "latex/CV-fr.tex"
 
 f = open(inFile,"r")
 f2 = open(outFile,"w")
@@ -29,9 +29,9 @@ f2.write("\\newcommand\Colorhref[3][blue]{\href{#2}{\small\color{#1}#3}} \n")
 f2.write(
 """\usepackage[scale=0.80]{geometry}
 \\name{"""+cv["firstname"].encode('utf8')+"""}{"""+cv["familyname"].encode('utf8')+"""}
-\\title{"""+cv["title"]+"""}                               
+\\title{"""+cv["title"].encode('utf8')+"""}                               
 %\\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-%\phone[mobile]{+1~(234)~567~890}                   % optional, remove / comment the line if not wanted
+\phone[mobile]{"""+cv["phone_number"].encode('utf8')+"""}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{"""+cv["email"].encode('utf8')+"""}                               % optional, remove / comment the line if not wanted
