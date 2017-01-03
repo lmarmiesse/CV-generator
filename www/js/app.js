@@ -5,7 +5,7 @@ app.controller('myCtrl', function($scope, $http, $location, $sce) {
     
     $scope.init = function(page){
         
-        $scope.changeLanguage('en');
+        $scope.changeLanguage('fr');
         $scope.page=$location.path().replace("/", "");
         
         if ($location.path()===""){
